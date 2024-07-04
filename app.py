@@ -168,8 +168,8 @@ model = load_model(model_path)
 # Calculate MDD
 if st.button("Calculate MDD"):
     try:
-        st.write(f"Input angles: {angles}")
-        st.write(f"Input params: {params}")
+        #st.write(f"Input angles: {angles}")
+        #st.write(f"Input params: {params}")
         MDD = calculate_mdd(model, angles, params, is_mobile, tolerance)
         st.write(f"Maximum Detectable Distance (MDD): {MDD:.2f} inches")
     except ValueError as ve:
